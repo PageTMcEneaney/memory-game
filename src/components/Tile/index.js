@@ -4,7 +4,7 @@ import "./style.css";
 
 function Tile(props) {
     return (
-        <div className="card">
+        <div className="card button">
             <div className="img-container">
                 <img alt={props.name} src={props.image} className="bookImg" />
             </div>
