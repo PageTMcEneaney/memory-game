@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "1984",
+        "image": "/images/1984w.png"
+    },
+    {
+        "id": 2,
+        "name": "2001 A Space Odessy",
+        "image": "/images/2001w.jpg"
+    },
+    {
+        "id": 3,
+        "name": "A Clockwork Orange",
+        "image": "/images/aClockworkOrangew.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Do Androids Dream of Electric Sheep?",
+        "image": "/images/Androidsw.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Brave New World",
+        "image": "/images/BraveNewWorldw.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Cat's Cradle",
+        "image": "/images/CatsCradlew.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Dune",
+        "image": "/images/Dunew.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Farenheit 451",
+        "image": "/images/Farenheit451w.jpg"
+    },
+    {
+        "id": 9,
+        "name": "The Hitchhikers Guide to the Galaxy",
+        "image": "/images/Hitchhikersw.png"
+    },
+    {
+        "id": 10,
+        "name": "I, Robot",
+        "image": "/images/iRobotw.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Journey to the Center of the Earth",
+        "image": "/images/Journeyw.jpg"
+    },
+    {
+        "id": 12,
+        "name": "The War of the Worlds",
+        "image": "/images/WarOfTheWorld.jpg"
+    }
+]

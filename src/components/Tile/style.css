@@ -1,0 +1,37 @@
+.card {
+  background: #fff;
+  border-radius: 0;
+  border: none;
+  /* height: 325px; */
+  margin: .6rem;
+  position: relative;
+  /* width: 325px; */
+  /* box-shadow: 0 3px 6px #999, 0 3px 6px #999; */
+  text-align: left;
+}
+
+img {
+    width: 150px;
+    opacity: .8;
+}
+
+img:hover {
+    /* box-shadow: 2px 2px 10px #666; */
+    opacity: 1;
+
+}
+
+
+/*********************** REMOVE BTN */
+.card > .remove {
+  color: #ff1744;
+  font-size: 48px;
+  position: absolute;
+  top: -20px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.card > .remove:hover {
+  color: #d50000;
+}
