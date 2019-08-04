@@ -1,0 +1,26 @@
+{
+  "name": "memory-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "precache-manifest.9f873ca694ba8c3dd2e618a049d69719.js",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PTMcEneaney/memory-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PTMcEneaney/memory-game/issues"
+  },
+  "homepage": "https://github.com/PTMcEneaney/memory-game#readme"
+}

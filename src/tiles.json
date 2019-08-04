@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "1984",
-        "image": "../images/1984w.png",
+        "image": "../../images/1984w.png",
         "chosen": false
     },
     {
