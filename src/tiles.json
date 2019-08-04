@@ -8,19 +8,19 @@
     {
         "id": 2,
         "name": "2001 A Space Odessy",
-        "image": "/images/2001w.jpg",
+        "image": "../images/2001w.jpg",
         "chosen": false
     },
     {
         "id": 3,
         "name": "A Clockwork Orange",
-        "image": "/images/aClockworkOrangew.jpg",
+        "image": "../../build/images/aClockworkOrangew.jpg",
         "chosen": false
     },
     {
         "id": 4,
         "name": "Do Androids Dream of Electric Sheep?",
-        "image": "/images/Androidsw.jpg",
+        "image": "/build/images/Androidsw.jpg",
         "chosen": false
     },
     {
