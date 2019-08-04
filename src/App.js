@@ -6,20 +6,24 @@ import _ from "lodash";
 
 import tiles from "./tiles.json";
 import React from 'react';
-// import logo from './logo.svg';
 import './index.css';
 
 class App extends React.Component {
+  // set initial state values
+
   state = {
     current: 0,
     high: 0,
     tiles
   }
+
+  // randomzie books on load and bind click event
   componentDidMount() {
     this.random();
     this.handleClick = this.handleClick.bind(this);
   }
 
+  // randomize function that reorders the state.tiles 
   random = () => {
     let randomFunc = () => {
       return Math.floor(Math.random() * 100)
@@ -34,23 +38,26 @@ class App extends React.Component {
     this.setState({ tiles: sortedTiles})
   }
 
+  //reset state.tiles.chosen values to false when win/lose condition is met
   resetChosen = () => {
     let chosenTiles = this.state.tiles;
     chosenTiles.map(tile => {
       tile.chosen = false;
       return tile;
     });
-
     this.setState({ tiles: chosenTiles})
-
   }
   
-
+  // onClick function whenever a book tile is clicked - controls both win and loss conditions
   handleClick = (objectid) => {
     let index = this.state.tiles.findIndex(x => x.id === objectid);
+
+    // if the clicked tile has not been clicked yet
     if (!this.state.tiles[index].chosen) {
       this.state.tiles[index].chosen = true
       this.setState( {tiles} );
+
+      //increasing current score (state variable)
       this.setState({ current: this.state.current + 1 })
 
       // if user doesn't choose any dupes they win!
@@ -59,17 +66,19 @@ class App extends React.Component {
         this.setState({current: 0, high: 0})
         this.resetChosen();
       }
-      this.random();
     } else {
-      alert("already guessed!")
-      this.setState({current: 0, high: this.state.current })
+      // if the clicked tile was already clicked
+      alert("Oops! You already guessed that!")
+      if (this.state.current >= this.state.high) {
+              //logging the highest score, and resetting current to 0
+              this.setState({current: 0, high: this.state.current })
+      } else {
+              this.setState({current: 0})
+      }
       this.resetChosen();
-      this.random();
-      
-
     }
-
-    // this.state.tiles[index].chosen = true;
+    //after user guesses, randomize tile array no matter what
+    this.random();
     }
 
   render() {

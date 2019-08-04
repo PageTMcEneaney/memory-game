@@ -3,8 +3,8 @@ import "./style.css";
 
 function Jumbotron() {
     return (
-        <div className="jumbotron jumbotron-fluid mt-5">
-            <div className="container">
+        <div className="jumbotron jumbotron-fluid mt-5 bg-dark">
+            <div className="container text-center">
                 <h1 className="display-4">Bookworm!</h1>
                 <p className="lead">Test your memory! Can you click all 12 books without any duplicates?</p>
             </div>
