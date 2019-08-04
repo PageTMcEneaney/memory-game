@@ -2,19 +2,19 @@
     {
         "id": 1,
         "name": "1984",
-        "image": "../../images/1984w.png",
+        "image": "/../../images/1984w.png",
         "chosen": false
     },
     {
         "id": 2,
         "name": "2001 A Space Odessy",
-        "image": "../images/2001w.jpg",
+        "image": "/../images/2001w.jpg",
         "chosen": false
     },
     {
         "id": 3,
         "name": "A Clockwork Orange",
-        "image": "../../build/images/aClockworkOrangew.jpg",
+        "image": "/../../build/images/aClockworkOrangew.jpg",
         "chosen": false
     },
     {
@@ -26,7 +26,7 @@
     {
         "id": 5,
         "name": "Brave New World",
-        "image": "/images/BraveNewWorldw.jpg",
+        "image": "../build/images/BraveNewWorldw.jpg",
         "chosen": false
     },
     {
