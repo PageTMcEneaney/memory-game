@@ -11,14 +11,14 @@ import './index.css';
 
 class App extends React.Component {
   state = {
+    current: 0,
+    high: 0,
     tiles
   }
   componentDidMount() {
     this.random();
-    // this.handleClick = this.handleClick.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
-
-  
 
   random = () => {
     let randomFunc = () => {
@@ -34,15 +34,43 @@ class App extends React.Component {
     this.setState({ tiles: sortedTiles})
   }
 
-  handleClick = () => {
-    alert("clicked!")
-    // let tilesClicked = this.state.tiles;
-    // tilesClicked.map(tile => {
-    //   tile.chosen = true;
-    //   console.log(tile);
-    //   return tile;
-    // })
+  resetChosen = () => {
+    let chosenTiles = this.state.tiles;
+    chosenTiles.map(tile => {
+      tile.chosen = false;
+      return tile;
+    });
+
+    this.setState({ tiles: chosenTiles})
+
   }
+  
+
+  handleClick = (objectid) => {
+    let index = this.state.tiles.findIndex(x => x.id === objectid);
+    if (!this.state.tiles[index].chosen) {
+      this.state.tiles[index].chosen = true
+      this.setState( {tiles} );
+      this.setState({ current: this.state.current + 1 })
+
+      // if user doesn't choose any dupes they win!
+      if (this.state.current >= 12) {
+        alert("You win!!")
+        this.setState({current: 0, high: 0})
+        this.resetChosen();
+      }
+      this.random();
+    } else {
+      alert("already guessed!")
+      this.setState({current: 0, high: this.state.current })
+      this.resetChosen();
+      this.random();
+      
+
+    }
+
+    // this.state.tiles[index].chosen = true;
+    }
 
   render() {
     return (
@@ -56,7 +84,8 @@ class App extends React.Component {
             key={tiles.id}
             name={tiles.name}
             image={tiles.image}
-            onClick={this.handleClick}
+            chosen={tiles.chosen}
+            onClick={ () => this.handleClick(tiles.id) }
           />
         ))}
       </Wrapper>

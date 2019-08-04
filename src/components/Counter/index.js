@@ -1,30 +1,21 @@
 import React from "react";
+import "./style.css";
 
-class Counter extends React.Component {
-  state = {
-    current: 0
-  };
 
-  scoreIncrease = () => {
-    this.setState({ current: this.state.current + 1})
-  }
-
-  render() {
+function Counter(props) {
     return(
         <nav className="navbar fixed-top navbar-light bg-light">
             <div className="container">
                 <div className="float-left">
+                    <h2>Bookworm</h2>
                 </div>
                 <div className="float-right">
-                    <h3>Score: {this.current} | High Score: {this.high}</h3>
+                    <h3>Score: {props.current} | High Score: {props.high}</h3>
                 </div>
             </div>
         </nav>
         )
     }
-}
-
-    //   <CardBody state={this.state} count={this.state.count} handleIncrement={this.handleIncrement} handleDecrement={this.handleDecrement} />
 
 
 export default Counter;
