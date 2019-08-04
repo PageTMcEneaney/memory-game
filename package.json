@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "gh-pages": "^2.1.0",
+    "gh-pages": "^2.0.0",
     "lodash": "^4.17.15",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
-  "homepage": "http://PTMcEneaney.github.io/memory-game",
+  "homepage": "https://ptmceneaney.github.io/memory-game/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
