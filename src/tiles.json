@@ -2,73 +2,73 @@
     {
         "id": 1,
         "name": "1984",
-        "image": "/images/1984w.png",
+        "image": "https://ptmceneaney.github.io/memory-gameimages/1984w.png",
         "chosen": false
     },
     {
         "id": 2,
         "name": "2001 A Space Odessy",
-        "image": "/images/2001w.jpg",
+        "image": "https://ptmceneaney.github.io/memory-game/images/2001w.jpg",
         "chosen": false
     },
     {
         "id": 3,
         "name": "A Clockwork Orange",
-        "image": "/images/aClockworkOrangew.jpg",
+        "image": "https://ptmceneaney.github.io/memory-game/images/aClockworkOrangew.jpg",
         "chosen": false
     },
     {
         "id": 4,
         "name": "Do Androids Dream of Electric Sheep?",
-        "image": "/images/Androidsw.jpg",
+        "image": "https://ptmceneaney.github.io/memory-game/images/Androidsw.jpg",
         "chosen": false
     },
     {
         "id": 5,
         "name": "Brave New World",
-        "image": "/images/BraveNewWorldw.jpg",
+        "image": "https://ptmceneaney.github.io/memory-game/images/BraveNewWorldw.jpg",
         "chosen": false
     },
     {
         "id": 6,
         "name": "Cat's Cradle",
-        "image": "/images/CatsCradlew.jpg",
+        "image": "https://ptmceneaney.github.io/memory-game/images/CatsCradlew.jpg",
         "chosen": false
     },
     {
         "id": 7,
         "name": "Dune",
-        "image": "/images/Dunew.jpg",
+        "image": "https://ptmceneaney.github.io/memory-game/images/Dunew.jpg",
         "chosen": false
     },
     {
         "id": 8,
         "name": "Farenheit 451",
-        "image": "/images/Farenheit451w.jpg",
+        "image": "https://ptmceneaney.github.io/memory-game/images/Farenheit451w.jpg",
         "chosen": false
     },
     {
         "id": 9,
         "name": "The Hitchhikers Guide to the Galaxy",
-        "image": "/images/Hitchhikersw.png",
+        "image": "https://ptmceneaney.github.io/memory-game/images/Hitchhikersw.png",
         "chosen": false
     },
     {
         "id": 10,
         "name": "I, Robot",
-        "image": "/images/iRobotw.jpg",
+        "image": "https://ptmceneaney.github.io/memory-game/images/iRobotw.jpg",
         "chosen": false
     },
     {
         "id": 11,
         "name": "Journey to the Center of the Earth",
-        "image": "/images/Journeyw.jpg",
+        "image": "https://ptmceneaney.github.io/memory-game/images/Journeyw.jpg",
         "chosen": false
     },
     {
         "id": 12,
         "name": "The War of the Worlds",
-        "image": "/images/WarOfTheWorld.jpg",
+        "image": "https://ptmceneaney.github.io/memory-game/images/WarOfTheWorld.jpg",
         "chosen": false
     }
 ]
